@@ -1,0 +1,20 @@
+//
+//  PlayingCard.h
+//  Match 2
+//
+//  Created by Alex John on 1/19/14.
+//  Copyright (c) 2014 Alex John. All rights reserved.
+//
+
+#import "Card.h"
+
+@interface PlayingCard : Card
+
+@property (nonatomic) NSUInteger rank;
+@property (strong, nonatomic) NSString *suit;
+
++ (NSUInteger)maxRank;
++ (NSArray *)rankStrings;
++ (NSArray *)validSuits;
+
+@end
