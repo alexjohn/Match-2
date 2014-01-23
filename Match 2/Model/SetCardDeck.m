@@ -24,7 +24,7 @@ static const int defaultNumAttributes = 3;
                     for (int symbol = 0; symbol < defaultNumAttributes; symbol++) {
                         SetCard *card = [[SetCard alloc] init];
                         
-                        NSDictionary *attributes = [[NSDictionary alloc] initWithObjects:@[[NSNumber numberWithInt:number + 1],
+                        NSDictionary *attributes = [[NSDictionary alloc] initWithObjects:@[[NSNumber numberWithInt:number],
                                                                                            [NSNumber numberWithInt:shade],
                                                                                            [NSNumber numberWithInt:color],
                                                                                            [NSNumber numberWithInt:symbol]]

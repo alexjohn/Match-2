@@ -15,8 +15,7 @@
 @property (nonatomic, readonly) NSInteger score;
 @property (nonatomic) NSUInteger numCardsToMatch;
 
-// designated initializer
-- (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck;
+- (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck; // designated initializer
 - (void)chooseCardAtIndex:(NSUInteger)index;
 
 @end

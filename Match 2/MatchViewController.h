@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CardMatchingGame.h"
+#import "Deck.h"
 
 @interface MatchViewController : UIViewController
+
+@property (strong, nonatomic) CardMatchingGame *game;
+// mutable array of card views here
+
+- (Deck *)createDeck; // abstract
 
 @end
