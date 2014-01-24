@@ -12,6 +12,8 @@
 
 @interface MatchViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *boundingView;
+
 @property (strong, nonatomic) CardMatchingGame *game;
 // mutable array of card views here
 

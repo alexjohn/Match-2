@@ -47,7 +47,7 @@
 
 - (void)updateUI
 {
-    for (UIButton *cardButton in self.cards) {
+    /*for (UIButton *cardButton in self.cards) {
         // this needs to change. probably need to implement the new card to get a better idea of how.
         int cardButtonIndex = [self.cards indexOfObject:cardButton];
         Card *card = [self.game cardAtIndex:cardButtonIndex];
@@ -58,7 +58,7 @@
         cardButton.enabled = !card.isMatched;
     }
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];*/
 }
 
 - (NSString *)titleForCard:(Card *)card
