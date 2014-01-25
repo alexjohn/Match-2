@@ -9,7 +9,9 @@
 #import "MatchViewController.h"
 
 @interface MatchViewController ()
+
 @property (strong, nonatomic) NSMutableArray *cards;
+
 @end
 
 @implementation MatchViewController
@@ -32,14 +34,7 @@
     return nil;
 }
 
-/*- (IBAction)touchCardButton:(UIButton *)sender
-{
-    int chosenButtonIndex = [self.cards indexOfObject:sender];
-    [self.game chooseCardAtIndex:chosenButtonIndex];
-    [self updateUI];
-}
-
-- (IBAction)dealButton
+/*- (IBAction)dealButton
 {
     self.game = nil;
     [self updateUI];
@@ -47,28 +42,7 @@
 
 - (void)updateUI
 {
-    /*for (UIButton *cardButton in self.cards) {
-        // this needs to change. probably need to implement the new card to get a better idea of how.
-        int cardButtonIndex = [self.cards indexOfObject:cardButton];
-        Card *card = [self.game cardAtIndex:cardButtonIndex];
-        
-        [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
-        [cardButton setBackgroundImage:[self backgroundImageForCard:card]
-                              forState:UIControlStateNormal];
-        cardButton.enabled = !card.isMatched;
-    }
-    
-    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];*/
-}
 
-- (NSString *)titleForCard:(Card *)card
-{
-    return card.selected ? card.contents : @"";
-}
-
-- (UIImage *)backgroundImageForCard:(Card *)card
-{
-    return [UIImage imageNamed:card.isSelected ? @"cardFront" : @"cardBack"];
 }
 
 @end

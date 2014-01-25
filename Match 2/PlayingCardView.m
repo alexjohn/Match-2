@@ -51,7 +51,6 @@
     [self setNeedsDisplay];
 }
 
-// i think this is the 'in code' way, while the swipe is the xcode way
 - (void)pinch:(UIPinchGestureRecognizer *)gesture
 {
     if ((gesture.state == UIGestureRecognizerStateChanged) ||
@@ -59,6 +58,13 @@
         self.faceCardScaleFactor *= gesture.scale;
         gesture.scale = 1.0;
     }
+}
+
+- (void)swipe:(UISwipeGestureRecognizer *)gesture
+{
+    // the view shouldn't interact with the model remember. should add a gesture recognizer into the controller to set faceUp & animate
+    // [self description];  does UIView respond to description?
+    NSLog(@"purple monkey dishwasher");
 }
 
 #pragma mark - Drawing

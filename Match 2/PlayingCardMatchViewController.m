@@ -37,13 +37,15 @@
             
             PlayingCardView *card = [[PlayingCardView alloc] initWithFrame:frame];
             
-            // card.faceUp = YES;
+            card.faceUp = YES;
             card.suit = @"♠︎";
             card.rank = 1;
             
             card.backgroundColor = nil;
             
             [self.boundingView addSubview:card];
+            
+            [card addGestureRecognizer:[[UISwipeGestureRecognizer alloc] initWithTarget:card action:@selector(swipe:)]];
         }
     }
 }
