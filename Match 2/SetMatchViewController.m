@@ -7,6 +7,7 @@
 //
 
 #import "SetMatchViewController.h"
+#import "SetCardView.h"
 
 @interface SetMatchViewController ()
 
@@ -18,6 +19,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    CGRect frame = CGRectMake(100, 100, 100, 100);
+    
+    SetCardView *card = [[SetCardView alloc] initWithFrame:frame];
+        
+    // card.name = @"joey";
+    
+    [self.view addSubview:card];
 }
 
 @end

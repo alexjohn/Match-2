@@ -18,17 +18,17 @@ static const int defaultNumAttributes = 3;
     self = [super init];
     
     if (self) {
-        for (int number = 0; number < defaultNumAttributes; number++) {
+        for (int count = 0; count < defaultNumAttributes; count++) {
             for (int shade  = 0; shade < defaultNumAttributes; shade++) {
                 for (int color = 0; color < defaultNumAttributes; color++) {
                     for (int symbol = 0; symbol < defaultNumAttributes; symbol++) {
                         SetCard *card = [[SetCard alloc] init];
                         
-                        NSDictionary *attributes = [[NSDictionary alloc] initWithObjects:@[[NSNumber numberWithInt:number],
+                        NSDictionary *attributes = [[NSDictionary alloc] initWithObjects:@[[NSNumber numberWithInt:count],
                                                                                            [NSNumber numberWithInt:shade],
                                                                                            [NSNumber numberWithInt:color],
                                                                                            [NSNumber numberWithInt:symbol]]
-                                                                                 forKeys:@[@"numberOfShapes", @"shade", @"color", @"shape"]];
+                                                                                 forKeys:@[@"pipCount", @"shade", @"color", @"shape"]];
                         card.attributes = attributes;
                         [self addCard:card];
                     }

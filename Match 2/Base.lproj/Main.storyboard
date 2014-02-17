@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P96-82-UBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="-102"/>
+            <point key="canvasLocation" x="857" y="-268"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KqG-XI-h5f">
@@ -74,7 +74,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6VD-Oy-Os3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="371" y="180"/>
+            <point key="canvasLocation" x="323" y="14"/>
         </scene>
         <!--Set Match View Controller - Item 2-->
         <scene sceneID="YWp-IB-Q4y">
@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgz-bY-lir" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="462"/>
+            <point key="canvasLocation" x="857" y="296"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
